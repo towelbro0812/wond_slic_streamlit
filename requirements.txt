@@ -1,5 +1,4 @@
 streamlit
-PIL
 stqdm
 opencv-python
 numpy
