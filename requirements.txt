@@ -1,4 +1,4 @@
 streamlit
 stqdm
-opencv-python
+opencv-python-headless
 numpy
