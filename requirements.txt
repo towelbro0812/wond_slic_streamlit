@@ -2,3 +2,4 @@ streamlit
 stqdm
 opencv-python-headless
 numpy
+opencv-contrib-python
