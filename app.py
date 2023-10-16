@@ -106,14 +106,14 @@ if st.session_state["stage"] >= 1:
     if str(st.session_state.img) != "":
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.session_state.UpperbH = st.slider("UpperbH",0.0,255.0,255.0,on_change=chang_stage,args=[2])
-            st.session_state.LowerbH = st.slider("LowerbH",0.0,255.0,0.0,on_change=chang_stage,args=[2])
+            st.session_state.UpperbH = st.slider("UpperbH",0.0,255.0,255.0,step=0.1,on_change=chang_stage,args=[2])
+            st.session_state.LowerbH = st.slider("LowerbH",0.0,255.0,0.0,step=0.1,on_change=chang_stage,args=[2])
         with col2:
-            st.session_state.UpperbS = st.slider("UpperbS",0.0,255.0,255.0,on_change=chang_stage,args=[2])
-            st.session_state.LowerbS = st.slider("LowerbS",0.0,255.0,0.0,on_change=chang_stage,args=[2])
+            st.session_state.UpperbS = st.slider("UpperbS",0.0,255.0,255.0,step=0.1,on_change=chang_stage,args=[2])
+            st.session_state.LowerbS = st.slider("LowerbS",0.0,255.0,0.0,step=0.1,on_change=chang_stage,args=[2])
         with col3:
-            st.session_state.UpperbV = st.slider("UpperbV",0.0,255.0,255.0,on_change=chang_stage,args=[2])
-            st.session_state.LowerbV = st.slider("LowerbV",0.0,255.0,0.0,on_change=chang_stage,args=[2])
+            st.session_state.UpperbV = st.slider("UpperbV",0.0,255.0,255.0,step=0.1,on_change=chang_stage,args=[2])
+            st.session_state.LowerbV = st.slider("LowerbV",0.0,255.0,0.0,step=0.1,on_change=chang_stage,args=[2])
         
 if st.session_state["stage"] >= 2:
     process_HSV()
